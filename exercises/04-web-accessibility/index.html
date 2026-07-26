@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head section: contains metadata and links to external files -->
+  <head>
+    <!-- Character encoding for proper text rendering -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed in the browser tab -->
+    <title>The Wandering Photographer</title>
+
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Skip link for keyboard and screen reader users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Main page wrapper that contains the whole website -->
+    <div class="page">
+      <!-- Header section contains the decorative divider, navigation and shopping basket icon -->
+      <header class="top-decoration">
+        <!-- Navigation links -->
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About me</a></li>
+          </ul>
+        </nav>
+
+        <!-- Decorative image used at the top of the page -->
+        <img src="TheDivider.png" alt="" class="divider" role="presentation">
+
+        <!-- Hidden main heading for accessibility (screen readers) -->
+        <h1 class="visually-hidden">The Wandering Photographer</h1>
+
+        <!-- Shopping basket icon link -->
+        <a href="#" class="basket-link" aria-label="Shopping basket with 4 items">
+          <img src="shopping.svg" alt="" class="basket-icon" aria-hidden="true">
+          <span class="basket-count" aria-hidden="true">4</span>
+        </a>
+      </header>
+
+      <!-- Main content area containing the photo gallery -->
+      <main id="main-content" class="gallery">
+        <!-- Visible gallery heading -->
+        <h2 class="gallery-title">The Wandering Photographer Gallery</h2>
+
+        <!-- Short introduction describing the gallery -->
+        <p class="gallery-intro">
+          Welcome to my photography gallery. These images were captured during my travels around the world and show some of my favourite landscapes, natural views and unforgettable moments.
+        </p>
+
+        <!-- Photo card 1 -->
+        <article class="photo-card">
+          <figure>
+            <!-- Photo image -->
+            <img src="OceanPhoto.jpg" alt="Ocean view with icy cliff at sunset">
+
+            <!-- Caption describing the photo -->
+            <figcaption>
+              This was from a fabulous trip to the coast of Greenland with my family. The water was lovely - but very cold!
+            </figcaption>
+          </figure>
+
+          <!-- Price of the photo print -->
+          <p class="photo-price">
+            <span class="visually-hidden">Price:</span> £22.99
+          </p>
+
+          <!-- Button to add the photo to basket -->
+          <button type="button" aria-label="Add Ocean photograph to basket">Add to basket</button>
+        </article>
+
+        <!-- Photo card 2 -->
+        <article class="photo-card">
+          <figure>
+            <img src="BridgePhoto.jpg" alt="Upward view of the Golden Gate Bridge in San Francisco">
+            <figcaption>
+              A picture of the Golden Gate Bridge in San Francisco, California!
+            </figcaption>
+          </figure>
+
+          <!-- Price of the photo print -->
+          <p class="photo-price">
+            <span class="visually-hidden">Price:</span> £18.99
+          </p>
+
+          <!-- Button to add the photo to basket -->
+          <button type="button" aria-label="Add Golden Gate Bridge photograph to basket">Add to basket</button>
+        </article>
+
+        <!-- Photo card 3 -->
+        <article class="photo-card">
+          <figure>
+            <img src="ValleyPhoto.jpg" alt="Wide river valley surrounded by mountains">
+            <figcaption>
+              Another great photo from Greenland. It's a river valley where a glacier used to be.
+            </figcaption>
+          </figure>
+
+          <!-- Price of the photo print -->
+          <p class="photo-price">
+            <span class="visually-hidden">Price:</span> £25.99
+          </p>
+
+          <!-- Button to add the photo to basket -->
+          <button type="button" aria-label="Add valley photograph to basket">Add to basket</button>
+        </article>
+
+        <!-- Photo card 4 -->
+        <article class="photo-card">
+          <figure>
+            <img src="WaterfallPhoto.jpg" alt="Large waterfall surrounded by rocks and greenery">
+            <figcaption>
+              The waterfall made such a lovely sound. I could have fallen asleep!
+            </figcaption>
+          </figure>
+
+          <!-- Price of the photo print -->
+          <p class="photo-price">
+            <span class="visually-hidden">Price:</span> £19.99
+          </p>
+
+          <!-- Button to add the photo to basket -->
+          <button type="button" aria-label="Add waterfall photograph to basket">Add to basket</button>
+        </article>
+      </main>
+
+      <!-- Footer section with copyright information -->
+      <footer class="site-footer">
+        <!-- Copyright text -->
+        <p>Copyright The Wandering Photographer 2018.</p>
+      </footer>
+    </div>
+  </body>
+</html>
